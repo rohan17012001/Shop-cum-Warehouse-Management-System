@@ -46,6 +46,9 @@ namespace graahak
             }
             else
             {
+                ofstream xy("tempbill.txt",ios::out);
+                xy<<"\nPurchase Bill\n";
+                xy.close();
                 ofstream ab("tempbill.txt",ios::app);
                 ab<<m<<")"<<s<<" : "<<q<<" "<< q*(n%1000)<<"\n";
                 m+=1;
